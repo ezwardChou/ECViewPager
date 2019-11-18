@@ -10,6 +10,8 @@
 
 @interface ECViewPager ()<UIScrollViewDelegate>
 
+@property (nonatomic,strong) UIScrollView *headScrollView;
+
 @property (nonatomic,strong) UIScrollView *scrollView;
 
 @property (nonatomic,strong) NSMutableArray *buttonArray;
@@ -22,6 +24,7 @@
 
 
 -(void)_initSelf{
+    
     _buttonArray = NSMutableArray.new;
     _viewControllers = NSMutableArray.new;
     
@@ -36,9 +39,25 @@
     
 }
 
+
+
 #pragma mark - Public
+
 -(void)reloadData{
     
+    //init headView
+    
+    //initScrollView
+    
+    
 }
+
+#pragma mark - Private
+
+
+#pragma mark - TOOL
+
+
+#pragma mark - ScrollView Delegate
 
 @end
