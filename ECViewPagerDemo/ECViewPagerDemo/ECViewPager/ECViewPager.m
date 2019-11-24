@@ -36,10 +36,14 @@
     _scrollView.bounces = NO;
     
     
-    
+   
 }
 
-
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    
+    
+}
 
 #pragma mark - Public
 

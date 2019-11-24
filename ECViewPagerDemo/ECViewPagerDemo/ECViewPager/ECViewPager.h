@@ -20,15 +20,20 @@
 
 @optional
 
--(NSString *_Nullable)ecViewPager:(ECViewPager *_Nonnull)viewPager GetTitleOfEachItemWithIndex:(NSInteger)index;
+-(NSString *_Nullable)ecViewPager:(ECViewPager *_Nonnull)viewPager getTitleOfEachItemWithIndex:(NSInteger)index;
 
--(NSString *_Nullable)ecViewPager:(ECViewPager *_Nonnull)viewPager GetImageNameOfEachItemWithIndex:(NSInteger)index;
+-(NSString *_Nullable)ecViewPager:(ECViewPager *_Nonnull)viewPager getImageNameOfEachItemWithIndex:(NSInteger)index;
 
-
+-(UIEdgeInsets)ecViewPager:(ECViewPager *_Nonnull)viewPager getEdgeOfEachItemWithIndex:(NSInteger)index;
 
 
 
 @end
+
+typedef enum : NSUInteger {
+    ECItemLayoutAlignLeft,
+    ECItemLayoutAlignCenter,
+} ECItemAlignType;
 
 NS_ASSUME_NONNULL_BEGIN
 
